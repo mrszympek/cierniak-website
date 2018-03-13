@@ -1,0 +1,5 @@
+node_modules/
+.idea/
+css/*
+package-lock.json
+/Gemfile.lock

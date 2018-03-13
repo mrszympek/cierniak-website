@@ -1,0 +1,9 @@
+exclude:
+  - .idea/
+  - node_modules/
+  - scss/
+  - gulpfile.js
+  - package.json
+  - Gemfile
+  - Gemfile.lock
+  - package-lock.json
