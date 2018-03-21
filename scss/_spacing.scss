@@ -1,0 +1,27 @@
+$spaceamounts: (
+		0: 0,
+		'xs': 8px,
+		's': 16px,
+		'm': 32px,
+		'l': 48px,
+		'xl': 64px,
+);
+$sides: (
+		'': '',
+		't': '-top',
+		'b': '-bottom',
+		'l': '-left',
+		'r': '-right'
+);
+
+@each $name, $space in $spaceamounts {
+	@each $abbr, $side in $sides {
+		.m#{$abbr}-#{$name} {
+			margin#{$side}: $space;
+		}
+
+		.p#{$abbr}-#{$name} {
+			padding#{$side}: $space;
+		}
+	}
+}
