@@ -1,0 +1,72 @@
+.welcome {
+	height: 70vh;
+	//background: url("http://yoland.ancorathemes.com/wp-content/uploads/2016/06/slide1.jpg") no-repeat center;
+	background: indianred;
+	background-size: cover;
+	position: relative;
+
+	@include mq(desktop) {
+		height: 95vh;
+	}
+}
+
+.welcome-header {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.topbar-nav {
+	display: none;
+
+	a {
+		padding: .5rem 1rem;
+		transition: .3s all;
+		font-weight: 700;
+		border-radius: 50px;
+
+		&:hover {
+			background: green;
+		}
+	}
+
+	@include mq(desktop) {
+		display: block;
+	}
+}
+
+.topbar-nav-mobile {
+	display: flex;
+	align-items: center;
+	padding: 1rem;
+	
+	@include mq(desktop) {
+		display: none;
+	}
+}
+
+.menu-button {
+	position: relative;
+	margin-left: auto;
+}
+
+.dropdown-menu {
+	display: block;
+	flex-direction: column;
+	position: absolute;
+	top: 2.5rem;
+	right: 0;
+	padding: .5rem 0;
+	background: #fff;
+	color: #f00;
+	cursor: pointer;
+	border-radius: 3px;
+	z-index: 2;
+
+	a {
+		display: block;
+		color: black;
+		padding: .5rem 5rem;
+	}
+}

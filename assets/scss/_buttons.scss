@@ -1,0 +1,15 @@
+.btn {
+	padding: .5rem 1rem;
+	color: #ffffff;
+	border-radius: 50px;
+	transition: .3s all;
+	display: inline-block;
+
+	@include btn-background(green);
+}
+
+.btn-big {
+	padding: 0 2rem;
+	line-height: px2rem(48px);
+	font-size: 18px;
+}

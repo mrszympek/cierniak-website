@@ -134,3 +134,17 @@ $mq-breakpoints: (
 	text-overflow: ellipsis;
 	white-space: nowrap;
 }
+
+
+//
+// Button Darken
+//
+
+@mixin btn-background ($color, $text: #fff) {
+	background-color: $color;
+	color: $text;
+
+	&:hover {
+		background-color: darken($color, 5%);
+	}
+}

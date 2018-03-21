@@ -204,26 +204,100 @@ body {
 .text-white {
   color: #ffffff; }
 
+.ai-center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.btn {
+  padding: .5rem 1rem;
+  color: #ffffff;
+  border-radius: 50px;
+  -webkit-transition: .3s all;
+  transition: .3s all;
+  display: inline-block;
+  background-color: green;
+  color: #fff; }
+  .btn:hover {
+    background-color: #006700; }
+
+.btn-big {
+  padding: 0 2rem;
+  line-height: 3rem;
+  font-size: 18px; }
+
 h1, h2, h3, h4 {
   font-family: 'Satisfy', cursive; }
 
 h1 {
-  font-size: 5rem; }
+  font-size: 4rem; }
 
 a {
   color: #ffffff;
   text-decoration: none; }
 
 .welcome {
-  height: 95vh;
-  background: url("http://yoland.ancorathemes.com/wp-content/uploads/2016/06/slide1.jpg") no-repeat center;
-  background-size: cover; }
+  height: 70vh;
+  background: indianred;
+  background-size: cover;
+  position: relative; }
+  @media (min-width: 61.25rem) {
+    .welcome {
+      height: 95vh; } }
 
-.topbar-nav a {
-  padding: .5rem 1rem;
-  -webkit-transition: .3s all;
-  transition: .3s all;
-  font-weight: 700; }
-  .topbar-nav a:hover {
-    background: green;
+.welcome-header {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%); }
+
+.topbar-nav {
+  display: none; }
+  .topbar-nav a {
+    padding: .5rem 1rem;
+    -webkit-transition: .3s all;
+    transition: .3s all;
+    font-weight: 700;
     border-radius: 50px; }
+    .topbar-nav a:hover {
+      background: green; }
+  @media (min-width: 61.25rem) {
+    .topbar-nav {
+      display: block; } }
+
+.topbar-nav-mobile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem; }
+  @media (min-width: 61.25rem) {
+    .topbar-nav-mobile {
+      display: none; } }
+
+.menu-button {
+  position: relative;
+  margin-left: auto; }
+
+.dropdown-menu {
+  display: block;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  top: 2.5rem;
+  right: 0;
+  padding: .5rem 0;
+  background: #fff;
+  color: #f00;
+  cursor: pointer;
+  border-radius: 3px;
+  z-index: 2; }
+  .dropdown-menu a {
+    display: block;
+    color: black;
+    padding: .5rem 5rem; }

@@ -10,11 +10,11 @@ var AUTOPREFIXER_BROWSERS = [
 ];
 
 gulp.task('watch', ['sass'], function () {
-    gulp.watch(['scss/**/*.scss'], ['sass']);
+    gulp.watch(['assets/scss/**/*.scss'], ['sass']);
 });
 
 gulp.task('sass', function () {
-    return gulp.src('scss/style.scss')
+    return gulp.src('assets/scss/style.scss')
         .pipe(sass({
             onError: function (error) {
                 gutil.log(gutil.colors.red('Error: ' + error.message));
