@@ -7,3 +7,5 @@ exclude:
   - Gemfile.lock
   - package-lock.json
   - assets/scss/
+
+baseurl: /cierniak-website
