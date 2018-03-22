@@ -23,5 +23,5 @@ gulp.task('sass', function () {
             }
         }).on('error', sass.logError))
         .pipe(autoprefixer(AUTOPREFIXER_BROWSERS))
-        .pipe(gulp.dest('css'));
+        .pipe(gulp.dest('assets/css'));
 });
