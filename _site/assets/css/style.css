@@ -13,7 +13,7 @@ html {
       font-size: 16px; } }
 
 body {
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   color: #000000e6; }
 
 .container {
@@ -205,11 +205,6 @@ body {
 .text-white {
   color: #ffffff; }
 
-.ai-center {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center; }
-
 .btn {
   padding: .5rem 1rem;
   color: #ffffff;
@@ -228,7 +223,7 @@ body {
   font-size: 18px; }
 
 h1, h2, h3, h4 {
-  font-family: 'Satisfy', cursive; }
+  font-family: "Satisfy", cursive; }
 
 h1 {
   font-size: 4rem; }
@@ -238,6 +233,9 @@ h2 {
 
 h3 {
   font-size: 3rem; }
+
+h4 {
+  font-size: 1.2rem; }
 
 a {
   color: #fff;
@@ -330,7 +328,7 @@ img {
   margin: 0 auto 3rem; }
 
 .slide-section {
-  background-image: url("https://pixabay.com/get/eb37b40c29f5003ed1534705fb0938c9bd22ffd41cb3134993f2c47aa0/garden-2253111_1920.jpg"); }
+  background-image: url("/assets/images/slide.jpg"); }
 
 .parallax {
   height: 100%;
@@ -338,3 +336,14 @@ img {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover; }
+
+.feature {
+  text-align: center; }
+  .feature img {
+    margin-bottom: 1rem;
+    max-width: 3.125rem; }
+  .feature h4 {
+    font-family: "Lato", sans-serif;
+    margin-bottom: .5rem; }
+  .feature p {
+    margin-bottom: 5rem; }
