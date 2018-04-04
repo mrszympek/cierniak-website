@@ -1,5 +1,5 @@
 .section {
-	padding: 8rem 0;
+	padding: 8rem 0 6rem;
 }
 
 .section-header {
@@ -7,11 +7,14 @@
 }
 
 .section-title {
-	margin-bottom: 1rem;
+	margin-bottom: 2rem;
 }
 
 .section-description {
-	max-width: 50rem;
+	max-width: px2rem(940px);
 	margin: 0 auto 3rem;
+}
 
+.slide-section {
+	background-image: url("https://pixabay.com/get/eb37b40c29f5003ed1534705fb0938c9bd22ffd41cb3134993f2c47aa0/garden-2253111_1920.jpg");
 }
