@@ -3,4 +3,4 @@ node_modules/
 css/*
 package-lock.json
 /Gemfile.lock
-_site/*
+_site/
