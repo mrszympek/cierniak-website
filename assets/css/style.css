@@ -338,7 +338,11 @@ img {
   background-size: cover; }
 
 .feature {
-  text-align: center; }
+  text-align: center;
+  padding: 0 1rem; }
+  @media (min-width: 61.25rem) {
+    .feature {
+      padding: 0 3rem; } }
   .feature img {
     margin-bottom: 1rem;
     max-width: 3.125rem; }
