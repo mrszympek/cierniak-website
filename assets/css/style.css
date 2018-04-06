@@ -212,10 +212,10 @@ body {
   -webkit-transition: .3s all;
   transition: .3s all;
   display: inline-block;
-  background-color: green;
+  background-color: #2BC016;
   color: #fff; }
   .btn:hover {
-    background-color: #006700; }
+    background-color: #26a913; }
 
 .btn-big {
   padding: 0 2rem;
@@ -273,7 +273,7 @@ img {
     border-radius: 50px;
     margin: 0 .5rem; }
     .topbar-nav a:hover {
-      background: green; }
+      background: #2BC016; }
   @media (min-width: 61.25rem) {
     .topbar-nav {
       display: block; } }

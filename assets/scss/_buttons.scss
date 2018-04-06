@@ -5,7 +5,7 @@
 	transition: .3s all;
 	display: inline-block;
 
-	@include btn-background(green);
+	@include btn-background($color-green);
 }
 
 .btn-big {
