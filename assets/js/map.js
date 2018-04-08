@@ -1,6 +1,5 @@
 function initMap() {
-    const location = {lat: 49.717123, lng: 19.118946};
-
+    const location = {lat: 49.717022, lng: 19.119010};
     let options = {
         zoom: 14,
         center: location
@@ -11,11 +10,12 @@ function initMap() {
     let marker = new google.maps.Marker({
         position: location,
         map: map,
-        title: 'Click to get directions'
+        title: 'Click to get directions',
     });
     
     marker.addListener('click', function () {
         map.setZoom(18);
         map.setCenter(marker.getPosition());
+        marker.setAnimation(google.maps.Animation.BOUNCE);
     });
 }
