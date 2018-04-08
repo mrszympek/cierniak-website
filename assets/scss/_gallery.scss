@@ -16,7 +16,21 @@
 }
 
 .gallery-item {
+	transition: .3s ease-in-out;
+
+
+	&:hover {
+		transform: scale(1.01);
+		overflow: hidden;
+
+		img {
+			filter: brightness(50%);
+		}
+	}
+
 	img {
 		display: block;
+		transition: .4s ease-in-out;
 	}
+
 }

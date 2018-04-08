@@ -17,11 +17,11 @@ $sides: (
 @each $name, $space in $spaceamounts {
 	@each $abbr, $side in $sides {
 		.m#{$abbr}-#{$name} {
-			margin#{$side}: $space;
+			margin#{$side}: $space !important;
 		}
 
 		.p#{$abbr}-#{$name} {
-			padding#{$side}: $space;
+			padding#{$side}: $space !important;
 		}
 	}
 }
